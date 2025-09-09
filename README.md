@@ -1,12 +1,10 @@
-
-</body>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz Día de las Flores Amarillas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <style>
         *,
         *::after,
@@ -111,15 +109,6 @@
             animation: shootingStarTail 3s linear infinite;
         }
 
-        .shooting-star:nth-child(1) { top: 5%; left: -10%; animation-delay: 0s; animation-duration: 2.5s; }
-        .shooting-star:nth-child(2) { top: 15%; left: -10%; animation-delay: 2s; animation-duration: 3s; }
-        .shooting-star:nth-child(3) { top: 25%; left: -10%; animation-delay: 4s; animation-duration: 2.8s; }
-        .shooting-star:nth-child(4) { top: 0%; left: -10%; animation-delay: 6s; animation-duration: 3.2s; }
-        .shooting-star:nth-child(5) { top: 35%; left: -10%; animation-delay: 8s; animation-duration: 2.7s; }
-        .shooting-star:nth-child(6) { top: 8%; left: -10%; animation-delay: 10s; animation-duration: 3.1s; }
-        .shooting-star:nth-child(7) { top: 45%; left: -10%; animation-delay: 12s; animation-duration: 2.9s; }
-        .shooting-star:nth-child(8) { top: 3%; left: -10%; animation-delay: 14s; animation-duration: 3.3s; }
-
         @keyframes shootingStar {
             0% { opacity: 0; transform: translateX(0) translateY(0) rotate(45deg); }
             10% { opacity: 1; }
@@ -133,7 +122,7 @@
             100% { width: 0; }
         }
 
-        /* === Lluvia de palabras amorosas === */
+        /* === Lluvia de palabras doradas con cuadritos neón (Matrix Style) === */
         .love-rain {
             position: fixed;
             top: -20px;
@@ -144,17 +133,30 @@
             z-index: 0;
         }
 
-        .love-word {
+        .love-word-container {
             position: absolute;
-            color: #ffd700;
-            font-family: 'Dancing Script', cursive;
-            font-size: 2.2vmin;
+            top: -60px;
             opacity: 0;
-            animation: fallWords 8s linear infinite;
-            text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+            animation: fallContainer 12s linear infinite;
         }
 
-        @keyframes fallWords {
+        .love-word {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.6);
+            color: #ffd700;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.8vmin;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.7),
+                        0 0 20px rgba(255, 215, 0, 0.4);
+            text-shadow: 0 0 5px #ffd700;
+            white-space: nowrap;
+        }
+
+        @keyframes fallContainer {
             0% { transform: translateY(-100vh); opacity: 0; }
             10% { opacity: 1; }
             90% { opacity: 1; }
@@ -420,7 +422,6 @@
             z-index: 0;
             animation: moving-grass--2 1.5s linear infinite;
         }
-        /* ... (resto de hierbas igual al original) ... */
 
         /* === KEYFRAMES ORIGINALES === */
         @keyframes moving-flower-1 { 0%, 100% { transform: rotate(2deg); } 50% { transform: rotate(-2deg); } }
@@ -434,44 +435,55 @@
         @keyframes grow-flower-tree { 0% { height: 0; border-radius: 1vmin; } }
         @keyframes blooming-flower { 0% { transform: scale(0); } }
 
-        /* === CARTA VERTICAL MÁS LARGA Y CON EMOJIS === */
+        /* === CARTA VERTICAL - MÁS ARRIBA, COMPACTA, FUENTE GRUESA === */
         .vertical-card {
             position: fixed;
-            top: 10%;
+            top: 8%; /* Más arriba */
             left: 50%;
             transform: translateX(-50%);
-            width: 85%;
-            max-width: 440px;
-            background: rgba(255, 255, 220, 0.98);
-            border-radius: 20px;
-            padding: 28px 22px;
-            box-shadow: 0 0 35px rgba(255, 215, 0, 0.9);
-            border: 3px solid #ffd700;
+            width: 80%;
+            max-width: 400px;
+            background: rgba(255, 255, 220, 0.9);
+            border-radius: 18px;
+            padding: 20px 18px;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+            border: 2px solid #ffd700;
             z-index: 1000;
-            font-family: 'Dancing Script', cursive;
-            color: #8b4513;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
             text-align: center;
-            font-size: 1.9vmin;
-            line-height: 1.6;
+            font-size: 1.8vmin;
+            line-height: 1.5;
             backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
             opacity: 0;
-            animation: slideInVertical 2.8s 1s forwards;
+            animation: slideInVertical 2.5s 1s forwards;
         }
 
         .vertical-card h2 {
-            font-size: 2.8vmin;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.6vmin;
             color: #d4af37;
-            margin-bottom: 18px;
-            text-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+            margin-bottom: 15px;
+            text-shadow: 0 0 4px rgba(255, 215, 0, 0.5);
+            font-weight: 600;
+        }
+
+        .vertical-card p {
+            margin: 8px 0;
+            font-size: 1.8vmin;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.4;
         }
 
         .vertical-card .emoji {
-            font-size: 2.3vmin;
+            font-size: 2vmin;
             margin: 0 3px;
         }
 
         @keyframes slideInVertical {
-            0% { opacity: 0; transform: translateX(-50%) translateY(-50px); }
+            0% { opacity: 0; transform: translateX(-50%) translateY(-30px); }
             100% { opacity: 1; transform: translateX(-50%) translateY(0); }
         }
 
@@ -494,9 +506,7 @@
             transition: transform 0.3s;
         }
 
-        .menu-btn:hover {
-            transform: scale(1.1);
-        }
+        .menu-btn:hover { transform: scale(1.1); }
 
         .menu-btn span {
             display: block;
@@ -530,24 +540,9 @@
 
         .menu-open .menu-panel { left: 0; }
 
-        .menu-panel h3 {
-            color: #ffd700;
-            margin-bottom: 15px;
-            font-size: 1.4em;
-        }
-
-        .menu-panel p, .menu-panel a {
-            margin: 12px 0;
-            font-size: 1.1em;
-            line-height: 1.5;
-        }
-
-        .menu-panel a {
-            color: #ffd700;
-            text-decoration: underline;
-            font-weight: 600;
-        }
-
+        .menu-panel h3 { color: #ffd700; margin-bottom: 15px; }
+        .menu-panel p, .menu-panel a { margin: 12px 0; }
+        .menu-panel a { color: #ffd700; text-decoration: underline; }
         /* === ABEJAS VOLANDO === */
         .bee {
             position: fixed;
@@ -566,7 +561,7 @@
             100% { transform: translate(0, 0) rotate(180deg); }
         }
 
-        /* === EXPLOSIÓN DE GIRASOLES (BOMBA RADIAL, PEQUEÑOS, MUCHOS) === */
+        /* === EXPLOSIÓN DE GIRASOLES (PERFECTA) === */
         .explosion {
             position: absolute;
             pointer-events: none;
@@ -575,23 +570,20 @@
 
         .explosion .emoji {
             position: absolute;
-            font-size: 1.6vmin; /* Pequeños */
+            font-size: 1.4vmin;
             color: #ffd700;
             opacity: 1;
-            animation: explode 1.3s cubic-bezier(0.2, 0.8, 0.8, 0.2) forwards;
+            animation: explode 1.4s cubic-bezier(0.2, 0.8, 0.8, 0.2) forwards;
             text-shadow: 0 0 3px rgba(0,0,0,0.3);
         }
 
         @keyframes explode {
-            0% { transform: scale(0); opacity: 0; }
-            20% { opacity: 1; }
-            100% { 
-                transform: translate(var(--x), var(--y)) scale(4.5); 
-                opacity: 0; 
-            }
+            0% { transform: scale(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; transform: scale(0.8); }
+            100% { transform: translate(var(--x), var(--y)) scale(4.5) rotate(360deg); opacity: 0; }
         }
 
-        /* === CRÉDITOS EN LA PARTE INFERIOR (CENTRADOS) === */
+        /* === CRÉDITOS EN LA PARTE INFERIOR === */
         .credits {
             position: fixed;
             bottom: 20px;
@@ -614,30 +606,16 @@
     <div class="night"></div>
     <div class="shooting-stars"></div>
 
-    <!-- === Lluvia de palabras amorosas === -->
+    <!-- === Lluvia de palabras doradas con emojis (Matrix Style) === -->
     <div class="love-rain" id="loveRain"></div>
 
-    <!-- === Lluvia de corazones y girasoles === -->
+    <!-- === Lluvia de corazones y girasoles flotando === -->
     <div class="floating-items" id="floatingItems"></div>
 
-    <!-- === CARTA VERTICAL === -->
+    <!-- === CARTA VERTICAL - TEXTO QUE SE ESCRIBE AUTOMÁTICAMENTE === -->
     <div class="vertical-card" id="verticalCard">
-        <h2>Feliz Día de las Flores Amarillas 🌻💛</h2>
-        <p>Para ti, que iluminas cada día como el sol 🌞</p>
-        <p class="emoji">🌻</p>
-        <p>Tus sonrisas son como girasoles en primavera 🌸</p>
-        <p class="emoji">🐝💛</p>
-        <p>Que esta noche estrellada te traiga paz, amor y alegría 💫</p>
-        <p class="emoji">✨🌻✨</p>
-        <p>Siempre estaré aquí, siguiéndote como el girasol sigue al sol 🌻→☀️</p>
-        <p>Cada latido mío canta tu nombre 🎶</p>
-        <p>Eres mi milagro diario, mi razón de sonreír 😊</p>
-        <p>Gracias por existir, por brillar, por ser tú 💖</p>
-        <p>Como los girasoles, mi amor por ti nunca se apaga 🌻→❤️</p>
-        <p>Donde quiera que vayas, te sigo con el alma 🌍💫</p>
-        <p>Porque tú eres mi luz, mi calor, mi todo 💛</p>
-        <p>Y en cada pétalo, hay una palabra de amor para ti 💌</p>
-        <p>Con todo mi corazón...<br>AnthZz 💛</p>
+        <h2 id="title"></h2>
+        <div id="content"></div>
     </div>
 
     <!-- === MENÚ DE 3 RAYAS === -->
@@ -649,10 +627,10 @@
 
     <div class="menu-panel" id="menuPanel">
         <h3>Menú - AnthZz Berrocal</h3>
-        <p>Desarrollador web | Artista digital | BerMatMods</p>
+        <p>Desarrollador web | 🧑‍💻👑| BerMatMods</p>
         <p>Diseño experiencias únicas con amor y código 💻✨</p>
         <a href="https://wa.me/51930569195" target="_blank">💬 Escríbeme en WhatsApp</a>
-        <p>Proyectos: Animaciones 3D, interfaces mágicas, cartas interactivas.</p>
+        <p>Proyectos: Detalles virtuales, interfaces mágicas, cartas interactivas. ETC...</p>
         <p>Créditos: By AnthZz Berrocal BerMatMods © 2025</p>
     </div>
 
@@ -840,23 +818,110 @@
         </div>
     </div>
 
-    <!-- === CRÉDITOS EN LA PARTE INFERIOR === -->
+    <!-- === CRÉDITOS === -->
     <div class="credits">By AnthZz Berrocal BerMatMods</div>
 
     <script>
-        // === Lluvia de palabras amorosas ===
-        const loveWords = ['Amor', 'Eres hermosa', 'Te admiro', 'Mi sol', 'Brillas', 'Te amo', 'Eres única', 'Floreciste en mí', 'Mi corazón', 'Para siempre', 'Con el alma', 'Como el sol', 'Eres luz', 'Gracias por existir'];
+        // === ESCRITURA AUTOMÁTICA DE LA CARTA CON ✍️ ===
+        window.onload = () => {
+            setTimeout(() => {
+                document.body.classList.remove("not-loaded");
+            }, 1000);
+
+            const titleElement = document.getElementById('title');
+            const contentElement = document.getElementById('content');
+            const titleText = "Feliz Día de las Flores Amarillas 🌻💛";
+            const contentText = [
+                "Para ti mi Amor, que iluminas cada día como el sol 🌞",
+                "🌻",
+                "Tus sonrisas son como girasoles en primavera 🌸",
+                "🐝💛",
+                "Que esta noche estrellada te traiga paz, amor y alegría 💫",
+                "✨🌻✨",
+                "Siempre estaré aquí, siguiéndote como el girasol sigue al sol 🌻→☀️",
+                "Cada latido mío canta tu nombre 🎶",
+                "Eres mi milagro diario, mi razón de sonreír 😊",
+                "Gracias por existir, por brillar, por ser tú 💖",
+                "Como los girasoles, mi amor por ti nunca se apaga 🌻→❤️",
+                "Donde quiera que vayas, te sigo con el alma 🌍💫",
+                "Porque tú eres mi luz, mi calor, mi todo 💛",
+                "Y en cada pétalo, hay una palabra de amor para ti 💌",
+                "Con todo mi corazón...<br>Te Amo muchísimo mi reina 💛"
+            ];
+
+            let charIndex = 0;
+            let pIndex = 0;
+            const speed = 40; // Velocidad de escritura (ms por caracter)
+
+            function typeTitle() {
+                if (charIndex < titleText.length) {
+                    titleElement.textContent += titleText.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeTitle, speed);
+                } else {
+                    setTimeout(typeContent, 500);
+                }
+            }
+
+            function typeContent() {
+                if (pIndex < contentText.length) {
+                    const p = document.createElement('p');
+                    p.innerHTML = '✍️ '; // Emoji de lápiz al inicio
+                    contentElement.appendChild(p);
+
+                    let textIndex = 0;
+                    const currentText = contentText[pIndex];
+
+                    function typeChar() {
+                        if (textIndex < currentText.length) {
+                            p.innerHTML = '✍️ ' + currentText.substring(0, textIndex + 1);
+                            textIndex++;
+                            setTimeout(typeChar, speed);
+                        } else {
+                            pIndex++;
+                            setTimeout(typeContent, 400);
+                        }
+                    }
+                    setTimeout(typeChar, 200);
+                }
+            }
+
+            typeTitle();
+        };
+
+        // === Lluvia de palabras doradas con emojis (Matrix Style) ===
+        const loveMessages = [
+            'Te amo 💖', 'Eres hermosa 🌸', 'Mi corazón es tuyo 💓', 'Brillas como el sol ☀️',
+            'Eres mi todo 💛', 'Te admiro profundamente 🌻', 'Eres única en el mundo 🌍',
+            'Gracias por existir 🙏', 'Eres mi milagro diario ✨', 'Floreciste en mí 🌱',
+            'Eres luz en mi oscuridad 💡', 'Mi alma te reconoce 🕊️', 'Eres mi paz interior 🕉️',
+            'Te extraño cada segundo ⏳', 'Eres mi razón de sonreír 😊', 'Eres mi cielo 🌌',
+            'Te pienso todo el día 🧠', 'Eres mi refugio 🏡', 'Eres perfecta tal como eres 🌟',
+            'Mi amor por ti crece 🌿', 'Eres mi musa artística 🎨', 'Eres mi fuerza 💪',
+            'Contigo todo tiene sentido 🧩', 'Eres mi eternidad ∞', 'Te cuido con el alma 🛡️',
+            'Eres mi sueño hecho realidad 💤', 'Eres mi reina 👑', 'Te protejo con fuego 🔥',
+            'Eres mi melodía 🎵', 'Mi vida contigo es arte 🖼️'
+        ];
+
         const loveRain = document.getElementById('loveRain');
-        setInterval(() => {
+
+        function createWord() {
+            const container = document.createElement('div');
+            container.className = 'love-word-container';
+            container.style.left = Math.random() * 100 + 'vw';
+            container.style.animationDuration = (Math.random() * 6 + 10) + 's';
+
             const word = document.createElement('div');
             word.className = 'love-word';
-            word.textContent = loveWords[Math.floor(Math.random() * loveWords.length)] + ' 💖';
-            word.style.left = Math.random() * 100 + 'vw';
-            word.style.animationDuration = (Math.random() * 5 + 5) + 's';
-            loveRain.appendChild(word);
-            setTimeout(() => word.remove(), 8000);
-        }, 400);
+            word.textContent = loveMessages[Math.floor(Math.random() * loveMessages.length)];
 
+            container.appendChild(word);
+            loveRain.appendChild(container);
+
+            setTimeout(() => container.remove(), 12000);
+        }
+
+        setInterval(createWord, 400);
         // === Lluvia de corazones y girasoles flotando ===
         const floatingItems = document.getElementById('floatingItems');
         const items = ['💖', '💗', '💓', '💞', '💘', '💝', '🌻', '🌼'];
@@ -870,7 +935,7 @@
             setTimeout(() => item.remove(), 25000);
         }, 600);
 
-        // === EXPLOSIÓN DE 75 GIRASOLES PEQUEÑOS (Efecto bomba radial) ===
+        // === EXPLOSIÓN DE GIRASOLES (PERFECTA) ===
         document.addEventListener('click', (e) => {
             const explosion = document.createElement('div');
             explosion.className = 'explosion';
@@ -882,7 +947,7 @@
                 emoji.className = 'emoji';
                 emoji.textContent = '🌻';
                 const angle = Math.random() * 360;
-                const distance = Math.random() * 180 + 100; // Lejos y rápido
+                const distance = Math.random() * 200 + 120;
                 emoji.style.setProperty('--x', Math.cos(angle * Math.PI / 180) * distance + 'px');
                 emoji.style.setProperty('--y', Math.sin(angle * Math.PI / 180) * distance + 'px');
                 explosion.appendChild(emoji);
@@ -892,7 +957,7 @@
 
             setTimeout(() => {
                 explosion.remove();
-            }, 1300);
+            }, 1400);
         });
 
         // === ABEJAS VOLANDO ===
@@ -915,23 +980,17 @@
         });
 
         // === SHOOTING STARS ===
-        window.onload = () => {
-            setTimeout(() => {
-                document.body.classList.remove("not-loaded");
-                function createStar() {
-                    const star = document.createElement('div');
-                    star.className = 'shooting-star';
-                    star.style.top = Math.random() * 60 + '%';
-                    star.style.animationDuration = (Math.random() * 1.5 + 2) + 's';
-                    document.querySelector('.shooting-stars').appendChild(star);
-                    setTimeout(() => star.remove(), 4000);
-                }
-                setInterval(() => {
-                    if (Math.random() > 0.3) createStar();
-                }, 3000);
-            }, 1000);
-        };
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'shooting-star';
+            star.style.top = Math.random() * 60 + '%';
+            star.style.animationDuration = (Math.random() * 1.5 + 2) + 's';
+            document.querySelector('.shooting-stars').appendChild(star);
+            setTimeout(() => star.remove(), 4000);
+        }
+        setInterval(() => {
+            if (Math.random() > 0.3) createStar();
+        }, 3000);
     </script>
 </body>
 </html>
-        
