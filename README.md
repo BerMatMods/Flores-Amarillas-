@@ -1483,7 +1483,7 @@
         const photoUrls = [
             'https://i.postimg.cc/YC1PLchN/1742316301125-2.jpg',
             'https://i.postimg.cc/bJGWJZbr/PSX-20250530-060357.jpg',
-            'https://i.postimg.cc/wjVSb8gq/Screenshot-20250427-213138.jpg',
+            'https://i.postimg.cc/TPvm3ZXM/PSX-20250920-161158.jpg',
             'https://i.postimg.cc/N0CZB6KZ/Screenshot-20250810-134752.jpg'
         ];
 
