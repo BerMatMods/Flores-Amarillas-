@@ -1173,11 +1173,11 @@
         <span></span>
     </div>
     <div class="menu-panel" id="menuPanel">
-        <h3>Menú - AnthZz Berrocal</h3>
-        <p>Desarrollador web | 🧑‍💻👑| BerMatMods</p>
+        <h3>Información</h3>
+        <p>Esta sorpresa a sido Desarrollado|Por| BerMatMods</p>
         <p>Diseño experiencias únicas con amor y código 💻✨</p>
         <a href="https://wa.me/51930569195" target="_blank">💬 Escríbeme en WhatsApp</a>
-        <p>Proyectos: Detalles virtuales, interfaces mágicas, cartas interactivas. ETC...</p>
+        <p>Para:Mi Reina Hermosa Briyidt</p>
         <p>Créditos: By AnthZz Berrocal BerMatMods © 2025</p>
     </div>
     <!-- === FLORES NUEVAS (REEMPLAZADAS - CONTENEDOR VACÍO) === -->
@@ -1277,10 +1277,11 @@
                 "Eres mi milagro diario, mi razón de sonreír 😊",
                 "Gracias por existir, por brillar, por ser tú 💖",
                 "Como los girasoles, mi amor por ti nunca se apaga 🌻→❤️",
-                "Donde quiera que vayas, te sigo con el alma 🌍💫",
+                "eres el amor de mi vida, 🌍💫",
                 "Porque tú eres mi luz, mi calor, mi todo 💛",
                 "Y en cada pétalo, hay una palabra de amor para ti 💌",
                 "Con todo mi corazón...<br>Te Amo muchísimo mi reina Briyidth💛"
+                "Atte: 👽AnthZz Berrocal👽" 
             ];
             let charIndex = 0;
             let pIndex = 0;
