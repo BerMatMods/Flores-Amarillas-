@@ -1276,7 +1276,7 @@
                 "Eres mi milagro diario, mi razón de sonreír 😊",
                 "Gracias por existir, por brillar, por ser tú 💖",
                 "Como los girasoles, mi amor por ti nunca se apaga 🌻→❤️",
-                "Donde quiera que vayas, te sigo con el alma 🌍💫",
+                "Tu eres mi todo🌍💫",
                 "Porque tú eres mi luz, mi calor, mi todo 💛",
                 "Y en cada pétalo, hay una palabra de amor para ti 💌",
                 "Con todo mi corazón...<br>Te Amo muchísimo mi reina Briyidth💛"
