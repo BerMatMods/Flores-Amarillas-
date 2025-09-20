@@ -1173,22 +1173,22 @@
     </div>
     <div class="menu-panel" id="menuPanel">
         <h3>Menú - AnthZz Berrocal</h3>
-        <p>Desarrollado por| 🧑‍💻👑| BerMatMods</p>
-        <p>Diseño experiencias únicas con amor y código 💻✨</p>
-        <a href="https://wa.me/51930569195" target="_blank">💬 Escríbeme en WhatsApp</a>
-        <p>Para: Mi amor Briyidtc</p>
-        <p>Créditos: By AnthZz Berrocal BerMatMods © 2025</p>
+        <p>Desarrollado por | 🧑‍💻👑| BerMatMods</p>
+        <p>❤️‍🔥DETALLE VIP💻✨</p>
+        <a href="https://wa.me/51930569195" target="_blank">💬vip</a>
+        <p>Para: Mi reina Hermosa Briyidth</p>
+        <p>por: By AnthZz Berrocal BerMatMods © 2025</p>
     </div>
     <!-- === FLORES NUEVAS (REEMPLAZADAS - CONTENEDOR VACÍO) === -->
     <div class="flowers">
         <!-- Serán inyectadas por JS -->
     </div>
     <!-- === CRÉDITOS === -->
-    <div class="credits">By AnthZz Berrocal BerMatMods</div>
+    <div class="credits">Creado por AnthZz Berrocal</div>
 
     <!-- === NUEVO: GALERÍA MODAL === -->
     <div class="gallery-modal" id="galleryModal">
-        <div class="gallery-header">Nuestros Momentos Preciosos 🌻</div>
+        <div class="gallery-header">🌹Unas fotos nuetras🌻</div>
         <button class="close-gallery" id="closeGallery">✕</button>
         <div class="gallery-grid" id="galleryGrid">
             <!-- Las imágenes se inyectarán aquí por JS -->
@@ -1263,7 +1263,7 @@
             }, 1000);
             const titleElement = document.getElementById('title');
             const contentElement = document.getElementById('content');
-            const titleText = "Feliz Día de las Flores Amarillas 🌻💛";
+            const titleText = "Feliz Día de las Flores Amarillas Mi amor🌻💛";
             const contentText = [
                 "Para ti mi Amor, que iluminas cada día como el sol 🌞",
                 "🌻",
